@@ -45,7 +45,9 @@ function App() {
           <input className="input my-2" id="url" type="text" value={url} onChange={(e) => setUrl(e.target.value)} />
         </div>
         <div className="input-container">
-          <label htmlFor="qr-size">QR Size <div>{qrSize}px</div></label>
+          <label htmlFor="qr-size">
+            QR Size <div>{qrSize}px</div>
+          </label>
           <input
             id="qr-size"
             type="range"
@@ -115,7 +117,7 @@ function App() {
           </button>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center mt-10 w-full">
+      <div className="flex flex-col items-center justify-center mt-3 w-full">
         <QRCodeCanvas
           ref={canvasRef}
           className="max-w-80 max-h-80 min-w-80 min-h-80"
