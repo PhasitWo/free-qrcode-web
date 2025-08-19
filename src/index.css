@@ -1,3 +1,18 @@
-body {
-  margin: 0;
+@import "tailwindcss";
+@plugin "daisyui" {
+  themes: light --default;
 }
+
+body {
+  @apply m-0 overflow-x-hidden p-2 text-sm
+}
+
+.input-container {
+  @apply grid grid-cols-[30%_70%] mb-5 items-center  w-full sm:w-120
+}
+
+.input-container > input {
+  @apply w-full
+}
+
+
