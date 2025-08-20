@@ -8,7 +8,7 @@ body {
 }
 
 .input-container {
-  @apply grid grid-cols-[30%_70%] mb-5 items-center  w-full sm:w-120
+  @apply grid grid-cols-[35%_65%] sm:grid-cols-[30%_70%] mb-5 items-center  w-80 sm:w-120
 }
 
 .input-container > input {

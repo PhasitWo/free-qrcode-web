@@ -62,18 +62,18 @@ function App() {
         <div className="input-container">
           <label htmlFor="image">Image</label>
           <div className="w-full">
-            <div className="flex flex-row w-full">
+            <div className="flex flex-row w-full items-center">
               <input
                 ref={fileInputRef}
                 id="image"
-                className="file-input flex-1.5"
+                className="file-input flex-2"
                 type="file"
                 accept="image/*"
                 onChange={handleImageUpload}
               />
               {imageSrc && (
                 <button
-                  className="btn text-red-500 flex-1"
+                  className="btn text-red-500"
                   onClick={() => {
                     setImageSrc("");
                     fileInputRef.current!.value = "";
